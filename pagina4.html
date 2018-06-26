@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+<title>Eventos</title>
+</head>
+<body>
+
+<h2>Basquete</h2>
+<!--Inserindo a imagem direto no html-->
+<a href="https://www.uol.com.br/" target="_blank"><img src="images/img-1.jpg" alt="basquete" height="300"/></a>
+<hr/>
+
+<!--inserindo com name a imagem em JS-->
+<a href="https://www.uol.com.br/" target="_blank"><img name="testeComName" height="300"/></a>
+<hr/>
+
+<!--inserindo com ID a imagem em JS-->
+<a href="https://www.uol.com.br/" target="_blank"><img id="testeComID" height="300"/></a>
+
+<script land="javascript">
+	//exibindo a imagem com a propriedade name do html
+	document.testeComName.src="images/img-2.jpg";
+	
+	//exibindo a imagem com a propriedade getElementById do JS
+	document.getElementById("testeComID").src="images/img-4.jpg";
+</script>
+
+<h2>Troca de imagens</h2>
+	<!--Adicionando eventos com troca de imagens-->
+	<!--troca de imagem ao passar com o mouse em cima-->
+	<!--troca de imagem ao tirar o mouse em cima-->
+	<a href="https://www.uol.com.br/" target="_blank"
+		onmouseover="document.getElementById('ft').src='images/img-2.jpg';"
+		onmouseout="document.getElementById('ft').src='images/img-3.jpg'">
+		<img src="images/img-1.jpg" alt="basquete" height="300" id="ft"/>
+	</a>
+<hr/>
+
+</body>
+</html>
