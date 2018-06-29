@@ -1,0 +1,24 @@
+﻿<html>
+<head>
+<title>Pagina 20</title>
+</head>
+<body>
+
+<script lang="javascript">
+/*a função setTimeout é uma função de temporizador, em segundos,
+ela executará todos de uma só vez, o que muda é tempo determinado para cada uma iniciar,
+podendo chama-la novamente no final, criando assim esse lopping*/
+function fundo() {
+	setTimeout("document.bgColor='blue';",1000);
+	setTimeout("document.bgColor='red';",2000);
+	setTimeout("document.bgColor='yellow';",3000);
+	setTimeout("document.bgColor='silver';",4000);
+	setTimeout("document.bgColor='green';",5000);
+	setTimeout("document.bgColor='black';",6000);
+	setTimeout("document.bgColor='white';fundo();",7000);
+}
+fundo();
+</script>
+
+</body>
+</html>

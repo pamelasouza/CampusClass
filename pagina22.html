@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+<title>Pagina 22</title>
+</head>
+<body>
+<img name="fotos" height="200"/>
+
+<script lang="javascript">
+contador=0;
+	function anima(){
+		img1="images/img-1.jpg";
+		img2="images/img-2.jpg";
+		img3="images/img-3.jpg";
+		img4="images/img-4.jpg";
+		img5="images/img-5.jpg";
+		img6="images/img-6.jpg";
+		contador++;
+		if(contador==1){img=img1;}
+		else if(contador==2){img=img2;}
+		else if(contador==3){img=img3;}
+		else if(contador==4){img=img4;}
+		else if(contador==5){img=img5;}
+		else if(contador==6){img=img6;contador=0;}
+		document.fotos.src=img;
+		setTimeout("anima()",800);
+	}
+	anima();
+</script>
+
+</body>
+</html>

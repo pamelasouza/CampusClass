@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+<title>Pagina 23</title>
+</head>
+<body>
+
+<script lang="javascript">
+	//propriedade para tratamento de texto
+	frase="Trabalhando com a linguagem Javascript"
+	document.write(frase);
+	//contagem de caracteres
+	document.write("<hr/>"+frase.length);
+	//Transforma o texto todo em maiúsculo
+	document.write("<hr/>"+frase.toUpperCase());
+	//Transforma o texto todo em minusculo
+	document.write("<hr/>"+frase.toLowerCase());
+	//Traz do carecter definido inicial ao final
+	document.write("<hr/>"+frase.substring(2,10));
+	//Traz apenas o caracter na posição definida
+	document.write("<hr/>"+frase.charAt(2));
+	//função de procurar, no caso ele mostra em qual posição esta o a
+	document.write("<hr/>"+frase.indexOf("a"));
+	//função de procurar, no caso ele procura o a partir da posição 10
+	document.write("<hr/>"+frase.indexOf("a",10));
+	//função de procurar, no caso como ele não encontrou o caracter na frase, retorna -1
+	document.write("<hr/>"+frase.indexOf("@"));
+	//mudança de estilo, frase bold, italico, cor vermelha e tamanho 7 no html antigo, que é o mesmo que 36px;
+	document.write("<hr/>"+frase.bold().italics().fontcolor("red").fontsize("7"));
+</script>
+
+</body>
+</html>

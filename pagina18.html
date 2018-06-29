@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+<title>Pagina 18</title>
+</head>
+<body>
+
+<script lang="javascript">
+//Função para receber um nome
+//Recebe a variavel com o nome
+//na primeira condição, caso deixe em branco, ele pede novamente para inserir
+//na segunda condição, caso clique em fechar ou cancelar, ele pede novamente
+//null é fechar*
+//na ultima, se o usuario colocar o nome, apresenta a msg de Bem vinda
+//Chama a funcao no final ex: frase();
+function frase(){
+	x=prompt("Coloque seu nome","");
+	
+	if(x==""){
+		alert("Coloque seu nome");
+		frase();
+	}
+	else if(x==null){
+		alert("Favor coloque um nome");
+		frase();
+	}
+	else{
+		document.write("Seja bem vindo, "+x);
+	}
+}
+frase();
+</script>
+
+</body>
+</html>
