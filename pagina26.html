@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+<title>Pagina 26</title>
+</head>
+<body>
+
+<form name="form1">
+	<table align="center">
+		<tr>
+			<td>Valor 1:</td>
+			<td><input type="text" name="txt1" /><td>
+		</tr>
+		<tr>
+			<td>Valor 2:</td>
+			<td><input type="text" name="txt2" /><td>
+		</tr>
+		<tr>
+			<td>Total:</td>
+			<td><input type="text" name="txt3" /><td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="button" value="Somar" onclick="conta(1);"/>
+				<input type="button" value="Subtrair" onclick="conta(2);"/>
+				<input type="button" value="Multiplicar" onclick="conta(3);"/>
+				<input type="button" value="Dividir" onclick="conta(4);"/>
+			</td>
+		</tr>
+	</table>
+</form>
+
+<script lang="javascript">
+	function conta(x){
+		vnum1=parseFloat(document.form1.txt1.value);
+		vnum2=parseFloat(document.form1.txt2.value);
+		if(x==1){total=vnum1+vnum2;}
+		else if(x==2){total=vnum1-vnum2;}
+		else if(x==3){total=vnum1*vnum2;}
+		else if(x==4){total=vnum1/vnum2;}
+		vnum3=document.form1.txt3.value=total;
+	}
+</script>
+</body>
+</html>

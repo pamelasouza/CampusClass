@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+<title>Pagina 29</title>
+</head>
+<body>
+
+<script lang="javascript">
+	//retornar a data
+	hoje=new Date();
+	document.write(hoje+"<hr/>");
+	
+	//dia - traz a data atual do sistema
+	dia=hoje.getDate();
+	document.write("Dia: "+dia+"<hr/>");
+	
+	//traz o mes, pq o JS le do mês 0 ao 11, onde 0 - janeiro
+	mes=hoje.getMonth()+1;
+	document.write("Mês: "+mes+"<hr/>");
+	
+	//traz o ano
+	ano=hoje.getFullYear();
+	document.write("Ano: "+ano+"<hr/>");
+	
+	//data completa dia - mes - ano
+	datacompleta=dia+"/"+mes+"/"+ano;
+	document.write("Data: "+datacompleta+"<hr/>");
+	
+	//Dia da semana
+	semana=hoje.getDay();
+	document.write("Semana: "+semana+"<hr/>");
+	
+	//Traz a hora do sistema
+	hora=hoje.getHours();
+	document.write("Hora: "+hora+"<hr/>");
+	
+	//Traz os minutos
+	min=hoje.getMinutes();
+	document.write("Min: "+min+"<hr/>");
+	
+	//Traz os segundos
+	seg=hoje.getSeconds();
+	document.write("Seg: "+seg+"<hr/>");
+
+	//Traz hora, minutos e segundos
+	horas=hora+":"+min+":"+seg;
+	document.write("horas: "+horas+"<hr/>");
+	
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<html>
+<head>
+<title>Pagina 24</title>
+</head>
+<body>
+
+<script lang="javascript">
+
+x=0;
+function anima() {
+	frase1="Aqui_vem_uma_frase";
+	frase2=frase1.substring(x,frase1.length);
+	document.title=frase2;
+	x++;
+	if(x>=frase1.length){x=0;}
+	setTimeout("anima();",200);
+}
+anima();
+
+</script>
+
+</body>
+</html>

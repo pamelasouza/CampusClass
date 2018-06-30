@@ -1,0 +1,42 @@
+﻿<html>
+<head>
+<title>Pagina 30</title>
+</head>
+<body>
+
+<script lang="javascript">
+	hoje=new Date();
+	dia=hoje.getDate();
+	mes=hoje.getMonth()+1;
+	ano=hoje.getFullYear();
+	semana=hoje.getDay();
+	
+	if(semana==0){semana="Domingo";}
+	else if(semana==1){semana="Segunda-feira";}
+	else if(semana==2){semana="Terça-feira";}
+	else if(semana==3){semana="Quarta-feira";}
+	else if(semana==4){semana="Quinta-feira";}
+	else if(semana==5){semana="Sexta-feira";}
+	else if(semana==6){semana="Sábado";}
+	
+	switch(mes){
+		case 1: mes="Janeiro"; break;
+		case 2: mes="Fevereiro"; break;
+		case 3: mes="Março"; break;
+		case 4: mes="Abril"; break;
+		case 5: mes="Maio"; break;
+		case 6: mes="Junho"; break;
+		case 7: mes="Julho"; break;
+		case 8: mes="Agosto"; break;
+		case 9: mes="Setembro"; break;
+		case 10: mes="Outubro"; break;
+		case 11: mes="Novembro"; break;
+		case 12: mes="Dezembro"; break;
+		}
+		
+		document.write(semana+" dia "+dia+" de "+mes+" de "+ano);
+</script>
+
+
+</body>
+</html>

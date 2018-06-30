@@ -1,0 +1,27 @@
+﻿<html>
+<head>
+<title>Pagina 30</title>
+</head>
+<body>
+
+<script lang="javascript">
+fruta=new Array("laranja","limão","uva","morango","abacaxi","pera","goiaba");
+
+document.write(fruta[3]+"<hr/>");
+
+total=fruta.length;
+
+document.write("Total: "+total+"<hr/>");
+
+for(x=0 ; x<fruta.length ; x++){
+	document.write("Fruta "+x+": "+fruta[x]+"<br/>");
+}
+
+lista_semana=new array('Dom','Seg','Ter','Qua','Qui','Sex','Sáb');
+hoje=new Date();
+semana=hoje.getDay();
+document.write("<hr/>Dia da semana: "+lista_semana[semana]);
+</script>
+
+</body>
+</html>
